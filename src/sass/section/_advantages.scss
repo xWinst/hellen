@@ -1,5 +1,9 @@
 .advantages__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
 }
 
 .advantages__picture {
@@ -30,12 +34,17 @@
     position: absolute;
     height: 40px;
     left: 56px;
-    top: center;
+    top: 50%;
     padding-left: 15px;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: $bgColor2;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .advantages__text {
     font-weight: 700;
     font-size: 14px;
+    transform: translateY(-10%);
 }
