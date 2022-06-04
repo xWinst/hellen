@@ -1,0 +1,41 @@
+.advantages__item {
+    position: relative;
+}
+
+.advantages__picture {
+    width: 59px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $accentColor;
+}
+
+.advantages__icon {
+    width: 33px;
+    height: 40px;
+    fill: $accentColor;
+}
+
+.advantages__icon--size {
+    width: 42px;
+    height: 41px;
+}
+
+.advantages__icon--width {
+    width: 35px;
+}
+
+.advantages__description {
+    position: absolute;
+    height: 40px;
+    left: 56px;
+    top: center;
+    padding-left: 15px;
+    background-color: #fff;
+}
+
+.advantages__text {
+    font-weight: 700;
+    font-size: 14px;
+}

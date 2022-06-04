@@ -1,8 +1,8 @@
 .how-we-do{
-  @extend %section !optional;
+  @extend .section;
 
   &__container{
-    @extend %section__container !optional;
+    @extend .section__container;
   
   @media screen and (min-width: $mobile) {
       width: $mobile;
@@ -18,11 +18,11 @@
   }
 
     &__title{
-     @extend %section__title !optional;
+     @extend .section__title;
     }
 
     &__list {
-      @extend %list !optional;
+      @extend .list;
     }
   
     &__item {
