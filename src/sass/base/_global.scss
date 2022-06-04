@@ -1,11 +1,11 @@
 body {
-
+    min-width: 320px;
     font-family: Montserrat, sans-serif;    
     font-size: 12px;
     line-height: 1.65;
     letter-spacing: 0.08em;
-    // background-color: $bgColor;
-    // color: $textColor;
+    background-color: $bgColor;
+    color: $mainColor;
 }
 
 /* Обнуляем отступы */
