@@ -1,2 +1,22 @@
-@import './common';
-@import './example';
+
+
+
+@import './base/variables';
+@import './base/modern_normalize';
+@import './base/global';
+@import './base/visibility-hidden';
+@import './section/header';
+@import './section/hero';
+@import './section/hero';
+@import './section/advantages';
+@import './section/problems';
+@import './section/how-we-do';
+@import './section/program';
+@import './section/benefits';
+@import './section/about';
+@import './section/guarantee';
+@import './section/reviews';
+@import './section/contacts';
+@import './section/footer';
+
+
