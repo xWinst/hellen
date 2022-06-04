@@ -1,0 +1,24 @@
+body {
+
+    font-family: Montserrat, sans-serif;    
+    font-size: 12px;
+    line-height: 1.65;
+    letter-spacing: 0.08em;
+    // background-color: $bgColor;
+    // color: $textColor;
+}
+
+/* Обнуляем отступы */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Убираем лишниее пространство под картинкой */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
