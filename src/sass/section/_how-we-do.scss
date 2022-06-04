@@ -1,8 +1,8 @@
 .how-we-do{
-  @extend %section;
+  @extend %section !optional;
 
   &__container{
-    @extend %section__container;
+    @extend %section__container !optional;
   
   @media screen and (min-width: $mobile) {
       width: $mobile;
@@ -18,11 +18,11 @@
   }
 
     &__title{
-     @extend %section__title;
+     @extend %section__title !optional;
     }
 
     &__list {
-      @extend %list;
+      @extend %list !optional;
       display: block;
         
       @media screen and (min-width: $tablet) {
@@ -33,16 +33,16 @@
       }
     }
 
-    &__list::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 8px;
-      width: 60px;
-      height: 1px;
-      background-color: $accentColor;
-      display: block;
-    }
+    // &__list::after {
+    //   // content: "";
+    //   // position: absolute;
+    //   // left: 0;
+    //   // top: 8px;
+    //   // width: 60px;
+    //   // height: 1px;
+    //   // background-color: $accentColor;
+    //   // display: block;
+    // }
 
     &__item{
       background: $bgColor;
@@ -54,11 +54,11 @@
         }
 
       @media screen and (min-width: $tablet) {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 24px) / 2);
       }
 
       @media screen and(min-width: $desktop) {
-        width: calc((100% - 90px) / 3);
+        width: calc((100% - 32px) / 3);
       }
     }
 
@@ -76,6 +76,7 @@
 
     &__svg{
       margin-bottom: 20px;
+      margin-top: 32px;
 
       @media screen and (min-width: $tablet) {
         margin-bottom: 32px;
