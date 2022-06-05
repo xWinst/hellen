@@ -1,19 +1,10 @@
 .how-we-do{
-<<<<<<< Updated upstream
-  @extend %section !optional;
-
-  &__container{
-    @extend %section__container !optional;
-  
-  @media screen and (min-width: $mobile) {
-=======
   @extend .section;
 
   &__container{
     @extend .section__container;
 
     @media screen and (min-width: $mobile) {
->>>>>>> Stashed changes
       width: $mobile;
     }
   
@@ -27,13 +18,6 @@
   }
 
     &__title{
-<<<<<<< Updated upstream
-     @extend %section__title !optional;
-    }
-
-    &__list {
-      @extend %list !optional;
-=======
       @extend .section__title;
     }
 
@@ -51,7 +35,6 @@
         justify-content: center;
         gap: 32px;
       }
->>>>>>> Stashed changes
     }
   
     &__item {
@@ -79,11 +62,6 @@
       }
     }
 
-    &__item:hover{
-      color: $bgColor;
-      background-color: $accentColor;
-    }
-
     &__image{
       display: flex;
       align-items: center;
@@ -93,12 +71,6 @@
     &__svg{
       margin-bottom: 20px;
       margin-top: 32px;
-<<<<<<< Updated upstream
-
-      @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
-      }
-=======
       fill: $accentColor;
 
       @media screen and (min-width: $tablet) {
@@ -127,7 +99,6 @@
       width: 5%;
       background-color: $accentColor;
     
->>>>>>> Stashed changes
     }
 
     &__pretitle{
@@ -138,23 +109,7 @@
       margin-bottom: 4px;
 
       @media screen and (min-width: $tablet) {
-<<<<<<< Updated upstream
         margin-bottom: 32px;
-=======
-        margin-bottom: 8px;
-        padding: 0 25px;
-      }
-      
-      @media screen and (min-width: $desktop) {
-        margin-bottom: 4px;
-        padding: 0 82px;
-      }
-
-      &:hover{
-        color: $bgColor;
-        background-color: $accentColor;
-        fill: $bgColor;
->>>>>>> Stashed changes
       }
     }
 
@@ -162,21 +117,14 @@
       font-size: 12px;
       line-height: 1.66;
       text-align: center;
-<<<<<<< Updated upstream
-      letter-spacing: 0.08em;
-=======
->>>>>>> Stashed changes
       padding: 0 11px 8px 11px;
       
       color: $lightColor;
 
-<<<<<<< Updated upstream
-=======
       @media screen and (min-width: $tablet) {
         padding-bottom: 40px;
       }
 
->>>>>>> Stashed changes
       @media screen and (min-width: $desktop) {
         font-size: 18px;
         line-height: 1.55;
@@ -184,9 +132,4 @@
       }
     }
 
-      &__item &__pretitle &__text &__svg:hover{
-        background-color: $accentColor;
-        color: $bgColor;
-        fill: $bgColor;
-      }
 }
