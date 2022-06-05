@@ -1,10 +1,19 @@
 .how-we-do{
+<<<<<<< Updated upstream
   @extend %section !optional;
 
   &__container{
     @extend %section__container !optional;
   
   @media screen and (min-width: $mobile) {
+=======
+  @extend .section;
+
+  &__container{
+    @extend .section__container;
+
+    @media screen and (min-width: $mobile) {
+>>>>>>> Stashed changes
       width: $mobile;
     }
   
@@ -18,16 +27,56 @@
   }
 
     &__title{
+<<<<<<< Updated upstream
      @extend %section__title !optional;
     }
 
     &__list {
       @extend %list !optional;
+=======
+      @extend .section__title;
+    }
+
+    &__list {
+      @extend .list;
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 24px;
+      }
+      @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+      }
+>>>>>>> Stashed changes
     }
   
     &__item {
       background: $bgColor;
       box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+        text-align: center;
+        max-height: 280px;
+      }
+      @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 32px) / 2);
+        
+      }
+      @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 64px) / 3);
+        
+      }
+
+      &:hover {
+        background-color: $accentColor;
+        color: $bgColor;
+        fill: $bgColor;
+      }
     }
 
     &__item:hover{
@@ -44,10 +93,41 @@
     &__svg{
       margin-bottom: 20px;
       margin-top: 32px;
+<<<<<<< Updated upstream
 
       @media screen and (min-width: $tablet) {
         margin-bottom: 32px;
       }
+=======
+      fill: $accentColor;
+
+      @media screen and (min-width: $tablet) {
+          margin-bottom: 32px;
+          margin-top: 40px;
+        }
+      
+      @media screen and (min-width: $desktop) {
+          margin-bottom: 40px;
+          margin-top: 90px;
+        }
+    }
+
+    &__pretitle-container{
+      position: relative;
+      text-align: center;
+    }
+
+    .--underline::after {
+      content: "";
+      position: absolute;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    
+      height: 3px;
+      width: 5%;
+      background-color: $accentColor;
+    
+>>>>>>> Stashed changes
     }
 
     &__pretitle{
@@ -55,9 +135,26 @@
       line-height: 20px;
       text-align: center;
       letter-spacing: 0.08em;
+      margin-bottom: 4px;
 
       @media screen and (min-width: $tablet) {
+<<<<<<< Updated upstream
         margin-bottom: 32px;
+=======
+        margin-bottom: 8px;
+        padding: 0 25px;
+      }
+      
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 4px;
+        padding: 0 82px;
+      }
+
+      &:hover{
+        color: $bgColor;
+        background-color: $accentColor;
+        fill: $bgColor;
+>>>>>>> Stashed changes
       }
     }
 
@@ -65,14 +162,31 @@
       font-size: 12px;
       line-height: 1.66;
       text-align: center;
+<<<<<<< Updated upstream
       letter-spacing: 0.08em;
+=======
+>>>>>>> Stashed changes
       padding: 0 11px 8px 11px;
       
-      color: #B9B9B9;
+      color: $lightColor;
 
+<<<<<<< Updated upstream
+=======
+      @media screen and (min-width: $tablet) {
+        padding-bottom: 40px;
+      }
+
+>>>>>>> Stashed changes
       @media screen and (min-width: $desktop) {
         font-size: 18px;
         line-height: 1.55;
+        padding-bottom: 40px;
       }
     }
+
+      &__item &__pretitle &__text &__svg:hover{
+        background-color: $accentColor;
+        color: $bgColor;
+        fill: $bgColor;
+      }
 }
