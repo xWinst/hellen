@@ -43,7 +43,6 @@
         counter-increment: li;
         font-weight: 700;
         font-size: 14px;
-        list-style-type: decimal-leading-zero;
         color: $accentColor;
 
         @media screen and (min-width: $desktop) {      
