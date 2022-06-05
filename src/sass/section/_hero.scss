@@ -4,14 +4,14 @@
     background-image: url(../images/hero_bg_mobile.svg);
     background-position: 0 -49px;
 
-    @media screen and (min-width: ($tablet)) {
+    @media screen and (min-width: $tablet) {
         padding-left: 10px;
         padding-bottom: 126px;
         background-image: url(../images/hero_bg_tablet.svg);
         background-position: 0 -139px;                
     }
 
-    @media screen and (min-width: ($desktop)) {
+    @media screen and (min-width: $desktop) {
        padding-left: 0;
        padding-bottom: 264px;
         background-image: url(../images/hero_bg_desktop.svg);                
