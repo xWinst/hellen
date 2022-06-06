@@ -1,0 +1,130 @@
+.problems{
+  @extend .section;
+  background: linear-gradient(to bottom, $mainColor 70%, $bgColor 30%);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 24px;
+  }
+
+  &__container{
+    @extend .section__container;
+
+    @media screen and (min-width:1680px) {
+      background-image:
+      url('../images/problems-fire.svg');
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      background-size: contain;
+    }
+  }
+
+  &__title{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.29;
+    letter-spacing: 0.03em;
+
+    padding-bottom: 24px;
+
+    color: $bgColor;
+    @media screen and (min-width: $tablet) {
+      padding-right: 284px;
+      padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+      line-height: 1.29;
+      padding-right: 843px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__discoloration {
+    color: $accentColor;
+  }
+
+  &__contain {
+    background-color: $bgColor;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    
+    padding: 20px 32px 24px 32px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 32px 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 60px 140px;
+    }
+  }
+
+  &__list{
+    @extend .list;
+    counter-reset: li;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 50px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+      gap: 40px 140px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 16px;
+
+    &:last-child{
+      margin: 0;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+    }
+    
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+    }
+
+    &::before {
+      content: "— 0" (counter(li));
+      counter-increment: li;
+      
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+
+      color: $accentColor;
+
+      // margin-bottom: 5px;
+      
+      // @media screen and (min-width: $desktop) {
+      //   margin-top: 8px;
+      // }
+    }
+  }
+
+  &__text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.08em;
+
+    margin-top: 5px;
+
+    @media screen and (min-width: $tablet) {
+      width: 236px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.4;
+      width: 336px;
+      margin-top: 8px;
+    }
+  }
+}
