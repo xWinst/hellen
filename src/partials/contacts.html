@@ -1,0 +1,44 @@
+<section id="contacts" class="section contacts">
+  <div class="container contacts-container">
+    <h2 class="contacts-title">
+      Registration for a <span class="accent">free</span> phone
+      <span class="accent">consultation</span> on the nuances of English UPE
+    </h2>
+    <p class="contacts-text">
+      Leave a request for participation in a
+      <span class="accent">free lesson</span>. <br />
+      A consultant will contact you and answer your questions
+    </p>
+    <form class="contacts-form" name="contacts-form" autocomplete="on">
+      <div class="form-container">
+        <div class="input-wrap">
+          <input
+            type="text"
+            class="contacts-form-input"
+            name="user-name"
+            id="user-name"
+            placeholder="Имя*"
+            minlength="3"
+            maxlength="30"
+            required
+          />
+          <input
+            type="tel"
+            class="contacts-form-input"
+            name="user-tel"
+            id="user-tel"
+            placeholder="Телефон*"
+            title="+380ххххххххх"
+            pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+            minlength="13"
+            maxlength="13"
+            required
+          />
+        </div>
+        <button type="submit" class="button contacts-button">
+          хочу на бесплатное занятие
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
