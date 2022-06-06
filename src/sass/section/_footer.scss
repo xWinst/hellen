@@ -1,0 +1,125 @@
+.footer {
+  // padding-top: 20px;
+  background-color: #fff;
+
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 1680px;
+  }
+}
+
+.footer-logo-container {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    //   align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-phone-icon {
+  width: 20px;
+  height: 19px;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 23px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 29px;
+    margin-right: 16px;
+  }
+}
+
+.footer-tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: #111518;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.footer-instagram-link {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-instagram {
+  padding-left: 24px;
+
+  @media screen and (min-width: 768px) {
+    border-left: 1px solid #b9b9b9;
+    margin-left: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+  }
+}
+
+.footer-bottom {
+  background-color: #111518;
+  padding: 24px 0px;
+  @media screen and (min-width: 1680px) {
+    width: 1680px;
+  }
+}
+
+.footer-bottom-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: #b9b9b9;
+}
