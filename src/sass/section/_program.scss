@@ -1,1 +1,57 @@
+.program {
+  background-color: $mainColor;
+}
 
+.program__title {
+  color: $bgColor;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+.program-list {
+}
+
+.program-list__item {
+}
+
+.program-list__title {
+  color: $bgColor;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.category-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.category-list__item {
+}
+
+.category-list__title {
+  color: $accentColor;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
+
+.topic-list {
+}
+
+.topic-list__item {
+  color: $lightColor;
+  font-weight: 500;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
