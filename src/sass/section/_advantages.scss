@@ -68,9 +68,9 @@
 }
 
 .advantages__block {
-    width: 2px;
+    width: 4px;
     height: 42px;
-    margin-left: -2px;
+    margin-left: -3px;
     background-color: $bgColor2;
 
     @media screen and (min-width: $desktop) {
@@ -79,7 +79,7 @@
 }
 
 .advantages__description {
-    margin-left: 12px;
+    margin-left: 11px;
     font-weight: 700;
     font-size: 14px;
 
