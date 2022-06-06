@@ -1,8 +1,8 @@
 .footer {
   // padding-top: 20px;
-  background-color: #fff;
+  background-color: $bgColor;
 
-  background-color: #fff;
+  background-color: $bgColor;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -37,7 +37,7 @@
     flex-direction: row;
     //   align-items: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -64,7 +64,7 @@
     width: 24px;
     height: 23px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 30px;
     height: 29px;
     margin-right: 16px;
@@ -76,13 +76,13 @@
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.08em;
-  color: #111518;
+  color: $mainColor;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 1.2;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 1.23;
   }
@@ -100,16 +100,16 @@
   padding-left: 24px;
 
   @media screen and (min-width: 768px) {
-    border-left: 1px solid #b9b9b9;
+    border-left: 1px solid $lightColor;
     margin-left: 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 16px;
   }
 }
 
 .footer-bottom {
-  background-color: #111518;
+  background-color: $mainColor;
   padding: 24px 0px;
   @media screen and (min-width: 1680px) {
     width: 1680px;
@@ -121,5 +121,5 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
-  color: #b9b9b9;
+  color: $lightColor;
 }
