@@ -25,6 +25,8 @@
     line-height: 1.3;
     letter-spacing: 0.03em;
 
+    animation: appearance 250ms 500ms backwards;
+
     @media screen and (min-width: $tablet) {
         width: 332px;
         font-size: 26px;                  
@@ -39,6 +41,8 @@
 .hero__description {
     margin-bottom: 40px;
 
+    animation: increase 250ms 750ms backwards;
+
     @media screen and (min-width: $desktop) {
         margin-bottom: 48px;               
     }
@@ -47,7 +51,9 @@
 .hero__text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.57;   
+    line-height: 1.57;  
+    animation: increase 250ms 1000ms backwards;
+
     @media screen and (min-width: $desktop) {
         font-size: 20px;
         line-height: 1.65;              
@@ -98,6 +104,8 @@
 
     transition: color 250ms linear;
 
+    animation: arrive-from-left 350ms 1250ms backwards;
+
     &:hover,
     &:focus {
         background-color: $bgColor;
@@ -120,6 +128,8 @@
 }
 
 .hero__image {
+  
+    animation: appearance 500ms backwards;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
@@ -131,4 +141,22 @@
         top: -460px;
         left: 804px;              
     }
+}
+
+@keyframes appearance {
+    0%  { transform: scale(0); }
+    50% { transform: scale(0.5) rotate(180deg); }
+    100%{ transform: scale(1) rotate(360deg); }
+}
+
+@keyframes increase {
+    0%  { transform: scale(0); }
+    50% { transform: scale(0.5); }
+    100%{ transform: scale(1); }
+}
+
+@keyframes arrive-from-left {
+    0%  { transform: translateX(-500px) scale(0); }
+    50% { transform: translateX(-250px) scale(1); }
+    100%{ transform: translateX(0); }
 }
