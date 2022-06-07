@@ -28,14 +28,14 @@
 
     color: $bgColor;
     @media screen and (min-width: $tablet) {
-      padding-right: 282px;
+      padding-right: 252px;
       padding-bottom: 25px;
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 46px;
       line-height: 1.29;
-      padding-right: 841px;
+      padding-right: 780px;
       padding-bottom: 80px;
     }
   }
