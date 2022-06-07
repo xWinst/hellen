@@ -128,8 +128,6 @@
 }
 
 .hero__image {
-  
-    animation: appearance 500ms backwards;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
@@ -141,6 +139,8 @@
         top: -460px;
         left: 804px;              
     }
+
+    animation: appearance 500ms backwards;
 }
 
 @keyframes appearance {
