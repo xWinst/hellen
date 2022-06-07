@@ -71,15 +71,22 @@
   color: $lightColor;
 }
 
+.modal-checkbox {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
 .modal-check {
   margin-left: 19px;
   margin-top: 12px;
 }
 
-.modal-fire {
-  display: inline-block;
-  width: 11px;
-  height: 13px;
+.modal-logo {
+  color: $bgColor;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
 }
 
 .check-text {
@@ -88,7 +95,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
   }
