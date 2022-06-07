@@ -22,7 +22,7 @@
     }
 
     &__list {
-      list-style: none;
+      @extend .list;
       
       @media screen and (min-width: $tablet) {
         display: flex;
@@ -37,20 +37,40 @@
   
     &__item {
       background: $bgColor;
+      fill: $accentColor;
       box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+      padding: 32px 15px;
+
+      transition: transform 500ms cubic-bezier(0.13, 0.54, 1, 1),
+      background-color 250ms cubic-bezier(0.13, 0.54, 1, 1);
 
       @media screen and (max-width: 767px) {
         margin-bottom: 16px;
         text-align: center;
-        padding: 32px 0;
       }
       @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 32px) / 2);
-        
+        padding: 40px 22px;
       }
       @media screen and (min-width: $desktop) {
         flex-basis: calc((100% - 64px) / 3);
-        
+        padding: 90px 82px;
+      }
+
+       &:hover{
+        transform: scale(1.05);
+
+        color: $bgColor;
+        background-color: $accentColor;
+        fill: $bgColor;
+
+        .how-we-do__pretitle::after{
+          border-color: $bgColor;
+        }
+          .how-we-do__text {
+            color: $bgColor;
+          }
       }
     }
 
@@ -61,47 +81,47 @@
     }
 
     &__svg{
+      transition: fill 400ms ease-out;
       margin-bottom: 20px;
-      margin-top: 32px;
-      fill: $accentColor;
 
       @media screen and (min-width: $tablet) {
         margin-bottom: 32px;
-        margin-top: 40px;
       }
       
       @media screen and (min-width: $desktop) {
         margin-bottom: 40px;
-        margin-top: 90px;
       }
     }
 
-    &__pretitle-container{
-      position: relative;
-      text-align: center;
-    }
-
-    .--underline::after {
-      content: "";
-      position: absolute;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    
-      height: 3px;
-      width: 5%;
-      background-color: $accentColor;
-    
-    }
-
     &__pretitle{
+      position: relative;
+
       font-size: 14px;
-      line-height: 20px;
+      line-height: 1.42;
       text-align: center;
       letter-spacing: 0.08em;
-      margin-bottom: 4px;
+
+      margin-bottom: 40px;
 
       @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
+        margin-bottom: 48px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        bottom: -23px;
+        right: 45.5%;
+        border-top: 3px solid $accentColor;
+
+        transition: all 400ms ease-out;
       }
     }
 
@@ -109,18 +129,12 @@
       font-size: 12px;
       line-height: 1.66;
       text-align: center;
-      padding: 0 11px 8px 11px;
-      
+     
       color: $lightColor;
-
-      @media screen and (min-width: $tablet) {
-        padding-bottom: 40px;
-      }
 
       @media screen and (min-width: $desktop) {
         font-size: 18px;
         line-height: 1.55;
-        padding-bottom: 40px;
       }
     }
 }
