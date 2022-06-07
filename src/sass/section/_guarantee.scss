@@ -70,6 +70,10 @@ li {
 
   @media screen and (min-width: $desktop) {
     font-size: 46px;
+
+    & > .section-title {
+      text-align: center;
+    }
   }
 }
 
