@@ -1,0 +1,75 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-icon" width="16" height="16">
+        <use href="./images/icons-m.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title contacts-title">
+      Leave a request for participation in a
+      <span class="accent">free lesson</span>.
+    </h2>
+    <p class="modal-text contacts-text">
+      A consultant will contact you and answer your questions
+    </p>
+    <form name="modal-form" autocomplete="on">
+      <div class="modal-field">
+        <input
+          type="text"
+          class="contacts-form-input modal-input"
+          name="user-name"
+          id="user-name"
+          placeholder="Name*"
+          minlength="3"
+          maxlength="30"
+          required
+        />
+        <input
+          type="tel"
+          class="contacts-form-input modal-input"
+          name="user-tel"
+          id="user-tel"
+          placeholder="Phone*"
+          title="+380ххххххххх"
+          pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+          minlength="13"
+          maxlength="13"
+          required
+        />
+        <input
+          type="email"
+          class="contacts-form-input modal-input"
+          name="user-email"
+          id="user-email"
+          placeholder="E-mail*"
+          title="user@mail.com"
+          required
+        />
+      </div>
+      <div class="modal-field">
+        <input
+          type="checkbox"
+          class="modal-check visibility-hidden"
+          name="inform"
+          id="inform"
+          value="inform"
+          required
+        />
+        <label for="inform" class="check-text"
+          ><span class="check-mark"
+            ><svg class="check-icon" width="15" height="16">
+              <use href="./images/icons-m.svg#check-fire"></use></svg
+          ></span>
+          <p class="check-text-agree">
+            I want to receive e-mails from HellEN
+          </p></label
+        >
+      </div>
+      <div class="modal-submit">
+        <button type="submit" class="button-modal">
+          consultation by phone
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
