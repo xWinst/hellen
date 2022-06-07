@@ -1,20 +1,20 @@
 .hero {
     padding-bottom: 60px;
     background-color: $bgColor2;
-    background-image: url(../images/hero_bg_mobile.svg);
-    background-position: 0 -49px;
+    background-image: url(../images/hero_bg.svg);
+    background-size: 768px 582px;
+    background-position: calc(100vw / 7 - 110px) bottom;
 
     @media screen and (min-width: $tablet) {
         padding-left: 10px;
         padding-bottom: 126px;
-        background-image: url(../images/hero_bg_tablet.svg);
-        background-position: 0 -139px;                
+        background-position: bottom center;
+        background-size: 100% auto;                
     }
 
     @media screen and (min-width: $desktop) {
        padding-left: 0;
-       padding-bottom: 264px;
-        background-image: url(../images/hero_bg_desktop.svg);                
+       padding-bottom: 264px; 
     }
 }
 
@@ -74,26 +74,26 @@
 
 .hero__thumb {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 40px auto 0;
     @media screen and (min-width: $tablet) {
-        align-items: flex-start;                
+        margin: 0;                 
     }
 }
 
-.hero__button {
+.hero__link {
     width: 280px;
     height: 48px;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    text-decoration: none;
     background-color: $accentColor;
     color: $bgColor;
-    border-width: 0;
     cursor: pointer;
 
     transition: color 250ms linear;
@@ -120,19 +120,15 @@
 }
 
 .hero__image {
-    margin-top: 40px;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
-        top: -182px;
-        left: 312px;
-        margin-top: 0;                 
+        top: -230px;
+        left: 312px;                
     }
 
     @media screen and (min-width: $desktop) {
-        position: absolute;
-        top: -390px;
-        left: 804px;
-        margin-top: 0;                 
+        top: -460px;
+        left: 804px;              
     }
 }
