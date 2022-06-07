@@ -16,7 +16,13 @@
   }
 }
 
-#more {
+#more,
+#more_2,
+#more_3,
+#more_4,
+#more_5,
+#more_6,
+#more_7 {
   display:none;
 }
 
@@ -33,7 +39,6 @@
   margin-right: auto;
 
   @media screen and (min-width: $tablet) {
-    display:flex;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     padding-bottom: 40px;
     padding-left: 40px;
@@ -42,7 +47,24 @@
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 60px;
+    box-shadow: none;
   }
+}
+
+.inner-box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 704px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: 1088px;
+    padding-left: 81px;
+    padding-bottom: 55px;
+    margin-right: auto;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
 }
 
 .section-title {
@@ -168,7 +190,7 @@ img {
 
   @media screen and (min-width: $tablet) {
     text-align: left;
-    max-width:430px;
+    max-width:412px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -180,7 +202,7 @@ img {
 
 .scroll-box {
   overflow-y: scroll;
-  height:220px;
+  height:180px;
   margin-top: 16px;
 
   @media screen and (min-width: $tablet) {
@@ -189,10 +211,22 @@ img {
 
   @media screen and (min-width: $desktop) {
     height:170px;
+
+    &::-webkit-scrollbar {
+      display: none;
+  }
   }
 }
 
-#myLink {
+#myLink,
+#myLink_2,
+#myLink_3,
+#myLink_4,
+#myLink_5,
+#myLink_6,
+#myLink_7 {
+  cursor:pointer;
+
   color:tomato;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -212,6 +246,14 @@ img {
   }
 }
 
+.box-shadow {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    width:1205px;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 620px;
@@ -222,15 +264,10 @@ img {
 
   @media screen and (min-width: $desktop) {
     height:480px;
-    width:1088px;
   }
 }
 
 .swiper-slide {
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: -webkit-flex;
-  // display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -332,4 +369,22 @@ img {
   @media screen and (min-width: $desktop) {
     margin-left:40px;
   }
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: "";
+  background-image: url('../images/next.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: "";
+  background-image: url('../images/prev.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
 }
