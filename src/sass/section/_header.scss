@@ -36,13 +36,6 @@ button {
   }
 }
 
-// @media screen and (min-width: 1680px) {
-//   .container {
-//     width: 1680px;
-//     padding: 0 16px;
-//   }
-// }
-
 .header {
   // width: 100%;
   padding-top: 20px;
@@ -69,12 +62,11 @@ button {
 }
 
 .logo {
-  /* position: fixed; */
-  color: $mainColor;
   font-weight: 800;
   font-size: 17px;
   line-height: 1.23;
   letter-spacing: 0.04em;
+  color: $mainColor;
 
   @media screen and (min-width: $tablet) {
     font-size: 26px;
@@ -89,7 +81,6 @@ button {
 
 .menu-logo-icon {
   @media screen and (min-width: $tablet) {
-    // display: none;
     width: 22px;
     height: 30px;
   }
@@ -218,7 +209,7 @@ button {
 
 .mobile-menu {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(17, 21, 24, 0.9);
@@ -227,13 +218,16 @@ button {
   padding: 20px 0px 0px 5px;
   opacity: 1;
   transform: scale(1);
-  transition: opacity 2500ms linear, transform 2500ms linear;
+  transform: translate(0, 0);
+  transition: transform 250ms linear, opacity 250ms linear,
+    visibility 250ms linear;
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: scale(0.1);
+    // transform: translate(900%, 50%);
   }
 }
 
