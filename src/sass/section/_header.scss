@@ -10,19 +10,6 @@ button {
   overflow: hidden;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   white-space: nowrap;
-//   width: 1px;
-//   height: 1px;
-//   overflow: hidden;
-//   border: 0;
-//   padding: 0;
-//   clip: rect(0 0 0 0);
-//   clip-path: inset(50%);
-//   margin: -1px;
-// }
-
 .container {
   width: 100%;
   padding: 0 20px;
@@ -221,7 +208,7 @@ button {
 }
 
 .menu-open-icon {
-  transition: fill 250ms linear;
+  transition: fill 250ms ease;
 
   .menu-open-btn:hover &,
   .menu-open-btn:focus & {
@@ -230,7 +217,6 @@ button {
 }
 
 .mobile-menu {
-  // display: none;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -239,14 +225,15 @@ button {
   width: 100vw;
   height: 100vh;
   padding: 20px 0px 0px 5px;
-  transition: opacity 250ms linear, visibility 250ms linear;
-  transform: scaleX(1);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 2500ms linear, transform 2500ms linear;
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: scaleX(0.5);
+    transform: scale(0.1);
   }
 }
 
