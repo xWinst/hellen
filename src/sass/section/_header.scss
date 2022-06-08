@@ -6,6 +6,15 @@ button {
   font-style: normal;
 }
 
+.link__up {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 20px;
+  z-index: 100;
+  color: $accentColor;
+}
+
 .no-scroll {
   overflow: hidden;
 }
