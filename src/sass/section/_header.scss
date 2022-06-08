@@ -8,11 +8,32 @@ button {
 
 .link__up {
   position: fixed;
-  bottom: 10px;
+  height: 30px;
+  width: 30px;
+  bottom:15px;
   right: 15px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1 solid $accentColor;
+  box-shadow: 5px 5px 10px rgba(78, 39, 6, 0.5);
+
   z-index: 5;
   color: $accentColor;
+
+  // @media screen and (min-width: $tablet) {
+  //   height: 30px;
+  //   width: 30px;
+  //   font-size: 25px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   height: 35px;
+  //   width: 35px;
+  //   font-size: 30px;
+  // }
+
 }
 
 .no-scroll {
