@@ -400,3 +400,13 @@
   width: 30px;
   height: 15px;
 }
+
+.swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullet-active-next-next {
+  
+  opacity:0;
+
+@media screen and (min-width:400px) {
+  opacity:1;
+}
+}
