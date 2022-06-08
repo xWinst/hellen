@@ -25,13 +25,6 @@
   }
 }
 
-// @media screen and (min-width: 1680px) {
-//   .container {
-//     width: 1680px;
-//     padding: 0 16px;
-//   }
-// }
-
 .contacts {
   background-color: $mainColor;
   background-image: url(../images/contacts-mob.png);
@@ -86,6 +79,7 @@
   }
   @media screen and (min-width: $desktop) {
     font-size: 46px;
+    width: 1090px;
   }
 }
 

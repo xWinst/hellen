@@ -1,5 +1,8 @@
 .advantages {
+    padding-top: 0;
+}
 
+.advantages__list {
     @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
@@ -71,7 +74,7 @@
     width: 4px;
     height: 42px;
     margin-left: -3px;
-    background-color: $bgColor2;
+    background-color: $bgColor;
 
     @media screen and (min-width: $desktop) {
         height: 74px;

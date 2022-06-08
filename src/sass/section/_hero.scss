@@ -1,20 +1,20 @@
 .hero {
-    padding-bottom: 60px;
-    background-color: $bgColor2;
+    padding-bottom: 100px;
+    background-color: $bgColor;
     background-image: url(../images/hero_bg.svg);
-    background-size: 768px 582px;
-    background-position: calc(100vw / 7 - 110px) bottom;
+    background-size: 768px 622px;
+    background-position: left calc(100vw / 7 - 110px) bottom;
 
     @media screen and (min-width: $tablet) {
         padding-left: 10px;
-        padding-bottom: 126px;
+        padding-bottom: 166px;
         background-position: bottom center;
         background-size: 100% auto;                
     }
 
     @media screen and (min-width: $desktop) {
        padding-left: 0;
-       padding-bottom: 264px; 
+       padding-bottom: 304px;
     }
 }
 
@@ -24,8 +24,6 @@
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-
-    animation: appearance 250ms 500ms backwards;
 
     @media screen and (min-width: $tablet) {
         width: 332px;
@@ -41,8 +39,6 @@
 .hero__description {
     margin-bottom: 40px;
 
-    animation: increase 250ms 750ms backwards;
-
     @media screen and (min-width: $desktop) {
         margin-bottom: 48px;               
     }
@@ -52,7 +48,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.57;  
-    animation: increase 250ms 1000ms backwards;
 
     @media screen and (min-width: $desktop) {
         font-size: 20px;
@@ -80,7 +75,9 @@
 
 .hero__thumb {
     position: relative;
-    margin: 40px auto 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     @media screen and (min-width: $tablet) {
         margin: 0;                 
     }
@@ -104,7 +101,7 @@
 
     transition: color 250ms linear;
 
-    animation: arrive-from-left 350ms 1250ms backwards;
+    animation: arrive-from-left 350ms 500ms backwards;
 
     &:hover,
     &:focus {
@@ -128,6 +125,8 @@
 }
 
 .hero__image {
+  
+    animation: appearance 500ms backwards;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
@@ -139,17 +138,9 @@
         top: -460px;
         left: 804px;              
     }
-
-    animation: appearance 500ms backwards;
 }
 
 @keyframes appearance {
-    0%  { transform: scale(0); }
-    50% { transform: scale(0.5) rotate(180deg); }
-    100%{ transform: scale(1) rotate(360deg); }
-}
-
-@keyframes increase {
     0%  { transform: scale(0); }
     50% { transform: scale(0.5); }
     100%{ transform: scale(1); }

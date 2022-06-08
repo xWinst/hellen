@@ -6,22 +6,39 @@ button {
   font-style: normal;
 }
 
+.link__up {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  bottom:15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1 solid $accentColor;
+  box-shadow: 5px 5px 10px rgba(78, 39, 6, 0.5);
+
+  z-index: 5;
+  color: $accentColor;
+
+  // @media screen and (min-width: $tablet) {
+  //   height: 30px;
+  //   width: 30px;
+  //   font-size: 25px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   height: 35px;
+  //   width: 35px;
+  //   font-size: 30px;
+  // }
+
+}
+
 .no-scroll {
   overflow: hidden;
 }
-
-// .visually-hidden {
-//   position: absolute;
-//   white-space: nowrap;
-//   width: 1px;
-//   height: 1px;
-//   overflow: hidden;
-//   border: 0;
-//   padding: 0;
-//   clip: rect(0 0 0 0);
-//   clip-path: inset(50%);
-//   margin: -1px;
-// }
 
 .container {
   width: 100%;
@@ -49,13 +66,6 @@ button {
   }
 }
 
-// @media screen and (min-width: 1680px) {
-//   .container {
-//     width: 1680px;
-//     padding: 0 16px;
-//   }
-// }
-
 .header {
   // width: 100%;
   padding-top: 20px;
@@ -82,12 +92,11 @@ button {
 }
 
 .logo {
-  /* position: fixed; */
-  color: $mainColor;
   font-weight: 800;
   font-size: 17px;
   line-height: 1.23;
   letter-spacing: 0.04em;
+  color: $mainColor;
 
   @media screen and (min-width: $tablet) {
     font-size: 26px;
@@ -102,7 +111,6 @@ button {
 
 .menu-logo-icon {
   @media screen and (min-width: $tablet) {
-    // display: none;
     width: 22px;
     height: 30px;
   }
@@ -221,7 +229,7 @@ button {
 }
 
 .menu-open-icon {
-  transition: fill 250ms linear;
+  transition: fill 250ms ease;
 
   .menu-open-btn:hover &,
   .menu-open-btn:focus & {
@@ -230,23 +238,26 @@ button {
 }
 
 .mobile-menu {
-  // display: none;
-  z-index: 1;
-  position: fixed;
+  z-index: 10;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(17, 21, 24, 0.9);
   width: 100vw;
   height: 100vh;
   padding: 20px 0px 0px 5px;
-  transition: opacity 250ms linear, visibility 250ms linear;
-  transform: scaleX(1);
+  opacity: 1;
+  transform: scale(1);
+  transform: translate(0, 0);
+  transition: transform 250ms linear, opacity 250ms linear,
+    visibility 250ms linear;
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: scaleX(0.5);
+    transform: scale(0.1);
+    // transform: translate(900%, 50%);
   }
 }
 

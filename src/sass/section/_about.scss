@@ -1,3 +1,11 @@
+.about {
+  padding-bottom: 0;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 120px;
+  }
+}
+
 .about__title {
   text-align: start;
 

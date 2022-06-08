@@ -94,6 +94,11 @@
   letter-spacing: 0.08em;
   color: $mainColor;
 
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: 1.2;
