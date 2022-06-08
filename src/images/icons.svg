@@ -77,7 +77,7 @@
 <symbol id="icon-arrow-next" viewBox="0 0 54 32">
 <path fill="#ff6b09" style="fill: var(--color1, #ff6b09)" d="M2 14c-1.105 0-2 0.895-2 2s0.895 2 2 2v-4zM53.414 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM2 18h50v-4h-50v4z"></path>
 </symbol>
-<symbol id="arrow-up" viewBox="0 0 19 19">
+<symbol id="arrow-up" viewBox="0 0 18 19">
 <path fill="#ff6b09" d="M2 10L9 4L16 10V12L9 6L2 12Z"></path>
 </symbol>
 </defs>
