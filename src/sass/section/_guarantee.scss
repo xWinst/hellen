@@ -46,6 +46,7 @@ li {
 }
 
 .guarantee-item__text {
+  font-weight:500;
   margin-left: 30px;
   line-height: 1.67;
 
@@ -72,15 +73,12 @@ li {
   font-weight: 800;
   font-size: 26px;
   line-height: 1.30;
-  text-align: center;
+  text-align: center !important;
   letter-spacing: 0.03em;
   color: #111518;
 
   @media screen and (min-width: $desktop) {
     font-size: 46px;
-    &.section__title{
-      text-align: center;
-    }
   }
 }
 
