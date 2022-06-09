@@ -4,9 +4,9 @@
     openModalBtn2: document.querySelector('[data-modal-open2]'),
     openCertificate: document.querySelector('.about__link'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
-    certClose: document.querySelector('[certClose]'),
+    certClose: document.querySelector('#certClose'),
     modal: document.querySelector('[data-modal]'),
-    certificate: document.querySelector('[certificate]'),
+    certificate: document.querySelector('#certificate'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
