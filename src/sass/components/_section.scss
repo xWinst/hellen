@@ -41,14 +41,14 @@
     @media screen and (min-width: $desktop) {
         margin-bottom: 80px;
         font-size: 46px;
-        text-align: start;
+        text-align: left;
     }
-}
+
 
 .section__title--color {
     width: 180px;
     color: $bgColor;
-    text-align: start;
+    text-align: left;
 
     @media screen and (min-width: $tablet) {
         width: 100%;

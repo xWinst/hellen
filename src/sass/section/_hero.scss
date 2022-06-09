@@ -99,7 +99,7 @@
     color: $bgColor;
     cursor: pointer;
 
-    transition: color 250ms linear;
+    transition: color 250ms ease, background-color 250ms ease, border 250ms ease ;
 
     animation: arrive-from-left 350ms 500ms backwards;
 
