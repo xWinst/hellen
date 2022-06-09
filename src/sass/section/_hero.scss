@@ -97,11 +97,12 @@
     text-decoration: none;
     background-color: $accentColor;
     color: $bgColor;
+    border:2 solid transparent;
     cursor: pointer;
 
-    transition: color 250ms ease, background-color 250ms ease, border 250ms ease ;
+    transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease ;
 
-    animation: arrive-from-left 350ms 500ms backwards;
+    animation: arrive-from-right 500ms 1500ms backwards, wobble 1000ms 2000ms;
 
     &:hover,
     &:focus {
@@ -126,7 +127,7 @@
 
 .hero__image {
   
-    animation: appearance 500ms backwards;
+    animation: increasing 500ms backwards 1000ms;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
@@ -140,14 +141,51 @@
     }
 }
 
-@keyframes appearance {
+@keyframes increasing {
     0%  { transform: scale(0); }
     50% { transform: scale(0.5); }
     100%{ transform: scale(1); }
 }
 
-@keyframes arrive-from-left {
-    0%  { transform: translateX(-500px) scale(0); }
-    50% { transform: translateX(-250px) scale(1); }
+@keyframes arrive-from-right {
+    0%  { transform: translateX(110vw) scale(0); }
+    50% { transform: translateX(50vw) scale(1); }
     100%{ transform: translateX(0); }
 }
+
+@keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+  
+    30% {
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    45% {
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    60% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    75% {
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

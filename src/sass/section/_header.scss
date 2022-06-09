@@ -18,21 +18,17 @@ button {
   border-radius: 50%;
   border: 1 solid $accentColor;
   box-shadow: 5px 5px 10px rgba(78, 39, 6, 0.5);
+  transform: scale(1);
 
   z-index: 5;
   color: $accentColor;
 
-  // @media screen and (min-width: $tablet) {
-  //   height: 30px;
-  //   width: 30px;
-  //   font-size: 25px;
-  // }
+  transition: transform 250ms ease;
 
-  // @media screen and (min-width: $desktop) {
-  //   height: 35px;
-  //   width: 35px;
-  //   font-size: 30px;
-  // }
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
 }
 
@@ -163,7 +159,7 @@ button {
   line-height: 1.21;
   text-transform: uppercase;
   color: $lightColor;
-  transition: color 250ms linear;
+  transition: color 250ms ease;
 
   &:hover,
   &:focus {
@@ -205,13 +201,14 @@ button {
     height: 70px;
   }
 
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
 
   &:hover,
   &:focus {
     color: $bgColor;
     background-color: $accentColor;
     outline: none;
+    border: 2px solid transparent;
   }
 }
 
@@ -249,8 +246,8 @@ button {
   opacity: 1;
   transform: scale(1);
   transform: translate(0, 0);
-  transition: transform 250ms linear, opacity 250ms linear,
-    visibility 250ms linear;
+  transition: transform 250ms ease, opacity 250ms ease,
+    visibility 250ms ease;
 
   &.is-hidden {
     opacity: 0;
@@ -290,7 +287,7 @@ button {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: $bgColor;
-  transition: color 250ms linear;
+  transition: color 250ms ease;
 
   &:hover,
   &:focus {
@@ -321,7 +318,7 @@ button {
 .menu-close-icon {
   fill: $bgColor;
   align-self: center;
-  transition: fill 250ms linear;
+  transition: fill 250ms ease;
 
   .menu-close-btn:hover &,
   .menu-close-btn:focus & {
@@ -343,12 +340,13 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: color 250ms ease, background-color 250ms ease, border-color 250ms ease;
 
   &:hover,
   &:focus {
     color: $bgColor;
     background-color: $accentColor;
+    border: 2px solid transparent;
     outline: none;
   }
   @media screen and (min-width: $tablet) {
