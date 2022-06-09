@@ -29,7 +29,10 @@ button {
   &:focus {
     transform: scale(1.2);
   }
+}
 
+.isnt-show{
+  display: none;
 }
 
 .no-scroll {

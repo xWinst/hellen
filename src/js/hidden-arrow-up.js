@@ -1,13 +1,14 @@
-// (() => {
-//     const refs = {
-//         header: document.querySelector('.header'),
-//         upbutton: document.querySelector('[upbutton]'),
-//     };
+(() => {
+    const refs = {
+        upbutton: document.querySelector('.link__up'),
+    };
 
-//     window.addEventListener("scroll", showArrow);
+    window.addEventListener('scroll', showArrow);
 
-//     function toggleMenu() {
-//     if (refs.header.scrollTop > 100) refs.upbutton.add('is-hidden');
-//     else refs.upbutton.remove('is-hidden');
+    function showArrow() {
+    if (window.pageYOffset < 100 ) refs.upbutton.classList.add('isnt-show');
+    else refs.upbutton.classList.remove('isnt-show');
 
-//   })();
+   // console.log(refs.upbutton.classList + " - " + window.pageYOffset);
+}
+  })();
