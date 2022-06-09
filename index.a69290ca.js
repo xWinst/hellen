@@ -1,2 +1,0 @@
-var checkBox=document.querySelector(".modal-check"),phone=document.querySelector(".input-phone"),email=document.querySelector(".input-email");function checked(){checkBox.checked?(phone.setAttribute("required","false"),email.setAttribute("required","true")):(phone.setAttribute("required","true"),email.setAttribute("required","false"))}checkBox.addEventListener("click",checked);
-//# sourceMappingURL=index.a69290ca.js.map
