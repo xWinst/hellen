@@ -94,6 +94,8 @@
   letter-spacing: 0.08em;
   color: $mainColor;
 
+  transition: color 250ms ease;
+
   &:hover,
   &:focus {
     color: $accentColor;

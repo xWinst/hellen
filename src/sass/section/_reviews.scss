@@ -202,7 +202,7 @@
 
 .scroll-box {
   overflow-y: scroll;
-  height:180px;
+  height:220px;
   margin-top: 16px;
 
   @media screen and (min-width: $tablet) {
@@ -229,6 +229,7 @@
 
   color:tomato;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: underline;
 
   &:hover {
     color:rgb(242, 168, 155);
@@ -399,4 +400,14 @@
   background-repeat: no-repeat;
   width: 30px;
   height: 15px;
+}
+
+.swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullet-active-next-next {
+  
+  opacity:0;
+
+@media screen and (min-width:400px) {
+  opacity:1;
+}
 }
