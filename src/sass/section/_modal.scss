@@ -105,6 +105,36 @@
   }
 }
 
+.contacts-form-input.input-email {
+  width: 100%;
+  border: 1px solid $bgColor;
+  padding: 15px 0px 16px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+
+  transition: border-color 250ms linear, background-color 250ms linear;
+
+  @media screen and (min-width: $desktop) {
+    padding: 23px 0px 23px 24px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  // &:valid {
+  //   border-color: $accentColor;
+  //   // background-color: transparent;
+  // }
+  &:focus {
+    border-color: $accentColor;
+    outline: none;
+  }
+  &:invalid {
+    background-color: rgb(241, 61, 61);
+  }
+}
+
 .check-mark {
   width: 15px;
   height: 16px;
