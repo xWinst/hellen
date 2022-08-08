@@ -1,11 +1,11 @@
 {
-  "name": "hellen_test",
+  "name": "hellen",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://xWinst.github.io/hellen_test",
+  "homepage": "https://xWinst.github.io/hellen",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /hellen_test/"
+    "build": "parcel build src/*.html --public-url /hellen/"
   },
   "repository": {
     "type": "git",
